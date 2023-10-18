@@ -1,3 +1,26 @@
+@media screen and (max-width:1200px) {
+    .container {  
+        display: grid;  
+        grid-template-columns: 1fr ;
+        grid-template-rows: 50px ;
+    }
+    .weather-temp{
+        
+        font-size: 60px;
+        font-weight: 200;
+       }
+       .text{
+        font-size: 10px;
+        font-weight: 200;
+       }
+       .weather-location{
+     
+        font-weight: 200;
+        font-size: 30px;
+    
+       }
+}
+
 .container{
 
     

@@ -46,10 +46,14 @@ const WeatherApp = () =>
          
         // The data will be now passed to a new variable "Data" to retrieve the weather data in json format
 
-        let data = await response.json();
+        let data = await response.json()
 
         // making new variables and using the DOM to change the weather data on the App
         
+        
+        
+
+
         const humidity = document.getElementsByClassName("humidity-percent");
         const wind = document.getElementsByClassName("wind-rate");
         const temperature = document.getElementsByClassName("weather-temp");
@@ -61,7 +65,7 @@ const WeatherApp = () =>
         humidity[0].innerHTML = data.main.humidity + " %"
         wind[0].innerHTML = Math.round(data.wind.speed) + " km/h"
         temperature[0].innerHTML = Math.round(data.main.temp) + "°c"
-        location[0].innerHTML = data.name
+        location[0].innerHTML = data.name + ", " + data.sys.country
 
         if (data.weather[0].icon === "01d" || data.weather[0].icon === "01n")
         {
