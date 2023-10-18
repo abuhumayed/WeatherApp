@@ -1,9 +1,4 @@
-@media screen and (max-width:1200px) {
-    .container {  
-        display: grid;  
-        grid-template-columns: 1fr ;
-        grid-template-rows: 50px ;
-    }
+
     .weather-temp{
         
         font-size: 60px;
@@ -19,13 +14,12 @@
         font-size: 30px;
     
        }
-}
 
 .container{
 
     
+    min-height: 100vh;
     width: 607px;
-    height: 829px;
     margin: auto;
     margin-top: 75px;
     background-image: linear-gradient(180deg,#130754 0%,#3b2f80 100%);
