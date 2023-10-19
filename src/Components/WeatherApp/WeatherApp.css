@@ -1,41 +1,28 @@
 
-    .weather-temp{
-        
-        font-size: 60px;
-        font-weight: 200;
-       }
-       .text{
-        font-size: 10px;
-        font-weight: 200;
-       }
-       .weather-location{
-     
-        font-weight: 200;
-        font-size: 30px;
-    
-       }
+
 
 .container{
 
-    
-    min-height: 100vh;
-    width: 607px;
-    margin: auto;
-    margin-top: 75px;
+   
+    width: min(90%,1000px);
+    margin-inline: auto;
+    height: 829px;
     background-image: linear-gradient(180deg,#130754 0%,#3b2f80 100%);
 
 }
 
 .top-bar{
+   
+    padding: max(3vh,1rem)1.5rem;
     display: flex;
     justify-content: center;
     gap: 14px;
-    padding-top: 60px;
     align-items: center;
     
     .cityInput{
+     
         display: flex;
-        width: 362px;
+        width: min(80%,500px);
         height: 78px;
         background: #ebfffc;
         border: none;
@@ -43,15 +30,16 @@
         border-radius: 40px;
         padding-left: 40px;
         color: #626262;
-        font-size: 20px;
+        font-size: clamp(10rem,30vw +1rem,20rem);
         font-weight: 400;
+      
 
     }
    .search-icon{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 78px;
+    width: min(10%,200px);
     height: 78px;
     background: #ebfffc;
     border-radius: 40px;
@@ -63,7 +51,8 @@
 }
 
 .weather-image{
-    margin-top: 29px;
+   
+    margin-top:max(5vh,2rem);
     display: flex;
     justify-content: center;
    }
@@ -87,12 +76,14 @@
 
 
    .data-container{
-    margin-top: 50px;
+    
+    margin-top:max(2vh,1rem);
     display: flex;
     justify-content: center;
     color: white;
    }
    .element{
+    
     margin: auto;
     display: flex;
     gap: 12px;
@@ -100,6 +91,7 @@
 
    }
    .data{
+    
     font-size: 34px;
     font-weight: 400;
    }
@@ -108,5 +100,5 @@
     font-weight: 400;
    }
    .icon{
-    margin-top:10px ;
+    margin-top:max(2vh,1rem);
    }
